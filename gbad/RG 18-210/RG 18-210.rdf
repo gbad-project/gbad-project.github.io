@@ -6,6 +6,27 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xml:base="https://aims.archives.gov.on.ca/GBAD/">
     <rico:RecordSet rdf:about="ADD/RG18/210">
+        <rico:history>
+            <!-- 
+                https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&exp=sisn%2011727
+             -->
+
+        </rico:history>
+        <rico:scopeAndContent>
+            <!--
+                file:///Users/peiwen/Desktop/gabd-project/readings/RiC-O_1-0_documentation.html#scopeAndContent
+
+                Summary of the scope (such as time periods, geography) and content (such as subject matter, administrative processes) of a Record Resource. Provides a more complete summary of the informational content of the Record Resource highlighting the information conveyed in the Record Resource, why it was created, received, and/or maintained, and the agents connected to it. It may include description of relations with agents, activities, dates and places, or with other record resources.
+            -->
+            <!--
+                Super-class: rico:generalDescription
+
+                if other sections need the general description, belongs to the generalDescription section. 
+                
+                General information about an entity.
+            -->
+        </rico:scopeAndContent>
+        
     </rico:RecordSet>
     <rico:Agent rdf:about="Authorities/BA619">
     </rico:Agent>
