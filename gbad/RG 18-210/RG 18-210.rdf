@@ -4,8 +4,14 @@
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xml:base="https://aims.archives.gov.on.ca/GBAD/">
+         xml:base="https://aims.archives.gov.on.ca/GBAD/"
+         xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
     <rico:RecordSet rdf:about="ADD/RG18/210">
+        <rico:hasRecordSetType
+         rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+        <rico:title xml:lang="en">Records of the Walkerton Inquiry</rico:title>
+        <rdfs:label xml:lang="en">Records of the Walkerton Inquiry</rdfs:label>
+        <rico:isAssociatedWithEvent></rico:isAssociatedWithEvent>
         <rico:history>
             <!-- 
                 https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&exp=sisn%2011727
@@ -26,8 +32,13 @@
                 General information about an entity.
             -->
         </rico:scopeAndContent>
+        <rico:Instantiation rdf:about="instantiation/">
+            <rdfs:seeAlso rdf:resource="https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&exp=sisn%2011727"/>
+        </rico:Instantiation>
         
     </rico:RecordSet>
     <rico:Agent rdf:about="Authorities/BA619">
     </rico:Agent>
+    <rico:Event>
+    </rico:Event>
 </rdf:RDF>
