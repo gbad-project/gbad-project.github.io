@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <database>AUTHORITY</database>
+  <records>
+    <REFD>RG 18-210</REFD>
+    <REFD_LOWEREXIST>X</REFD_LOWEREXIST>
+    <LEVELDES>Series</LEVELDES>
+    <TITLE>Records of the Walkerton Inquiry</TITLE>
+    <DATECR>2000-2002</DATECR>
+    <DATEDSRC>2000--2002</DATEDSRC>
+    <ACCRUAL>No further accruals are expected.</ACCRUAL>
+    <RESPARCH>Epp</RESPARCH>
+    <ARCHD>Dale</ARCHD>
+    <STATUSD>Approved</STATUSD>
+    <WEBD>Y</WEBD>
+    <NEWLIST>N</NEWLIST>
+    <ISA>The records were acquired by the Archives of Ontario in a direct transfer from the Walkerton Inquiry in 2002.</ISA>
+    <SCOPE>Series consists of records generated during the course of the Walkerton Inquiry into the tainted water tragedy that occurred in Walkerton, Ontario in May 2000. At that time Walkerton�s drinking water system became contaminated with deadly bacteria, primarily Escherichia coli O157:H7.1 Seven people died, and more than 2,300 became ill. |The Ontario government called the Inquiry to investigate what actually happened in Walkerton. The mandate of the Inquiry was to determine the causes of the E-coli outbreak, find out who was responsible, and to investigate if it could have been prevented. |Commissioner O&#x27;Connor divided the Inquiry into two Parts. The purpose of Part One was to fulfil the mandate of discovering what had happened in Walkerton, and why, and to make recommendations based on those findings. Part One involved a great deal of fact finding and included evidentiary hearings. Part Two of the Inquiry was broader in scope and dealt with policy issues related to safe drinking water. The primary purpose of Part Two was to make recommendations regarding Ontario&#x27;s drinking water system. |The records in this series have been arranged into sub-series that broadly reflect Parts One and Two of the Inquiry, and also include general administrative records created by the Inquiry&#x27;s staff. Included in the sub-series are records connected with the hearings and meetings held by the Inquiry, commissioned research reports, correspondence, the reference database of documents used by the Inquiry and the Inquiry&#x27;s website. </SCOPE>
+    <RESTRTX>Some of the records are closed until 2022. See sub-series descriptions for details.</RESTRTX>
+    <TGU>See sub-series descriptions for terms governing use.</TGU>
+    <GMD>Textual records |Electronic records |Moving images |Sound recordings</GMD>
+    <FCODES>Accession number: 45241.</FCODES>
+    <HOWTO>See sub-series descriptions for information on how to access the records.</HOWTO>
+    <INDEXPROV>Ontario. Walkerton Inquiry</INDEXPROV>
+    <OFFORG>
+      <DATEOFF>2000-2002</DATEOFF>
+      <OFFICEAB>Walkerton Inquiry</OFFICEAB>
+      <AB_REFA>BA619</AB_REFA>
+      <OFFICEC></OFFICEC>
+      <C_REFA></C_REFA>
+    </OFFORG>
+    <FINDAID_GRP>
+      <FINDAID>Please see sub-series descriptions for information about finding aids.</FINDAID>
+      <FINDAIDLINK></FINDAIDLINK>
+      <FINDAID_URL></FINDAID_URL>
+    </FINDAID_GRP>
+    <IILOAN>
+      <IIL></IIL>
+      <IIL_URL></IIL_URL>
+    </IILOAN>
+    <SISN>11727</SISN>
+  </records>
+</root>
