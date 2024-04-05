@@ -22,7 +22,7 @@
       <!--The University-of-Strathclyde-Archives_Scotland was using createdBy and managedBy, while the NationalArchivesOfFrance is using regulatedBy -->
       <!--Since the graph that Aaron provided is using RegulatedBy, the rico:isOrWasRegulatedBy is applied here-->
       <rico:regulatedBy rdf:resource="agent/Authority/BA-619"/>
-      <rico:regulatedBy rdf:resource="agent/Authority/ON-00009"/> <!--The code for agent Archives of Ontario. Since this recordSet hasOrHadholder by Archives of Ontario-->
+      <rico:heldBy rdf:resource="agent/Authority/ON-00009"/> <!--The code for agent Archives of Ontario. Since this recordSet hasOrHadholder by Archives of Ontario-->
 
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-13</rico:creationDate> <!--Establish date of Inquiry-->
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-23</rico:lastModificationDate> <!--Clossing date of Inquiry-->
@@ -53,7 +53,6 @@
       <rico:agentIsTargetOfMandateRelation>
          <rico:MandateRelation>
             <rico:mandateRelationHasTarget rdf:resource="agent/Order in Council 1170 / 2000"/>
-            <!--The -->
             <rico:mandateRelationHasSource>
                <rico:Mandate>
                   <rico:title>Order in Council 1170 / 2000</rico:title>
@@ -62,8 +61,10 @@
             </rico:mandateRelationHasSource>
          </rico:MandateRelation>
       </rico:agentIsTargetOfMandateRelation>
-      
    </rico:Agent>
+
+   <!--One nodes related to the agent that hasn't been implemented yet is the one related to the agentHierarchicalRelations. That  this recordSet hasOrHadLeader from -->
+
 
 
 </rdf:RDF>  
