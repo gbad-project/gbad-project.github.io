@@ -1,11 +1,15 @@
-<!--The first title section copied from file RG 18-210-->
 <?xml version="1.0" encoding="UTF-8"?>
+<!--The first title section copied from file RG 18-210-->
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xml:base="https://aims.archives.gov.on.ca/GBAD/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://gbad.archives.gov.on.ca/RG/18/210/1"
+
+         https://gbad.archives.gov.on.ca/BA/619
+
          xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
 
    <rico:RecordSet rdf:about="ADD/RG18/210"> <!--Still not sure whether to use rico:RecordSet or rico:Record. From the two examples provided, they were both using Record-->
@@ -27,7 +31,7 @@
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-13</rico:creationDate> <!--Establish date of Inquiry-->
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-23</rico:lastModificationDate> <!--Clossing date of Inquiry-->
    
-   <rico:hasInstantiation>
+      <rico:hasInstantiation>
          <!--We might need to code some references in order to reference the instantiations. 
             The following "ADD/SISN/11727" aplied the SISN number retreived from the ADD dataset-->
          <rico:Instantiation rdf:about="ADD/SISN/11727"> 
@@ -37,14 +41,13 @@
             <rico:heldBy rdf:resource="agent/Authority/ON-00009"/> <!--Refer to line 25-->
             <rdfs:seeAlso rdf:resource="https://www.archives.gov.on.ca/en/index.aspx"/> <!--Applied the AOO web link here-->
             <rico:hasOrHadHolder rdf:resource="agent/Authority/ON-00009"/>
-
          </rico:Instantiation>
       </rico:hasInstantiation>
-   <rico:RecordSet>
+   </rico:RecordSet>
 
    <rico:Agent rdf:about="Authority/Ontario. Walkerton Inquiry"> <!--Applied "HEADING": "Ontario. Walkerton Inquiry" here-->
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="ADD/RG18/210"/>
+      <rico:describedBy rdf:resource="RG18/210"/>
       <rico:hasAgentName>
          <rico:AgentName rdf:about="agentName/Walkerton Inquiry">
             <rdfs:label xml:lang="en">Walkerton Inquiry</rdfs:label>
@@ -61,6 +64,9 @@
             </rico:mandateRelationHasSource>
          </rico:MandateRelation>
       </rico:agentIsTargetOfMandateRelation>
+
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-13</rico:creationDate> <!--Establish date of Inquiry-->
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-23</rico:lastModificationDate> <!--Clossing date of Inquiry-->
    </rico:Agent>
 
    <!--One nodes related to the agent that hasn't been implemented yet is the one related to the agentHierarchicalRelations. That  this recordSet hasOrHadLeader from -->
