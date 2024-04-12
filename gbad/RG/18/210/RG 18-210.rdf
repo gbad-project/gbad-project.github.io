@@ -32,9 +32,13 @@
                 General information about an entity.
             -->
         </rico:scopeAndContent>
+        <!--The enclosed rico:Instantiation element does not validate:
+        Error: {E201} rdf:about not allowed as attribute here.[Line = 35, Column = 56]
+        Error: {E201} rdf:resource not allowed as attribute here.[Line = 36, Column = 163]
         <rico:Instantiation rdf:about="instantiation/">
-            <rdfs:seeAlso rdf:resource="https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&exp=sisn%2011727"/>
+            <rdfs:seeAlso rdf:resource="https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&amp;exp=sisn%2011727"/>
         </rico:Instantiation>
+        -->
         
     </rico:RecordSet>
     <rico:Agent rdf:about="Authorities/BA619">
