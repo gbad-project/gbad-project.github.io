@@ -6,10 +6,7 @@
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
-         xml:base="https://gbad.archives.gov.on.ca/RG/18/210/1"
-
-         https://gbad.archives.gov.on.ca/BA/619
-
+         xml:base="https://gbad.archives.gov.on.ca/"
          xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
 
    <rico:RecordSet rdf:about="ADD/RG18/210"> <!--Still not sure whether to use rico:RecordSet or rico:Record. From the two examples provided, they were both using Record-->
