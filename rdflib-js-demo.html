@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load RDF/XML File with rdflib.js</title>
+    <script src="assets/js/rdflib.min.js"></script>
+</head>
+<body>
+    <h1>RDF/XML File Loading Example</h1>
+    <div id="debugInfo"></div>
+    <pre id="rdfContent"></pre>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            const debugInfo = document.getElementById('debugInfo');
+            const rdfContent = document.getElementById('rdfContent');
+            const store = $rdf.graph();
+
+            var RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+            var RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#");
+
+            // Define the URI of the RDF/XML file
+            const rdfUri = 'demo.rdf';
+
+            // Define the base URI
+            const baseUri = 'http://127.0.0.1:4000/';
+
+            try {
+                // Load RDF/XML file into the store
+                debugInfo.innerHTML += 'Loading RDF/XML file...<br>';
+                await $rdf.parse(rdfUri, store, baseUri, 'application/rdf+xml');
+                debugInfo.innerHTML += 'RDF/XML file loaded successfully.<br>';
+
+                // Serialize the RDF data as Turtle format (for display purposes)
+                const turtleContent = $rdf.serialize(undefined, store, baseUri, 'text/turtle');
+
+                // Display the RDF content
+                rdfContent.textContent = turtleContent;
+            } catch (error) {
+                debugInfo.innerHTML += 'Error loading RDF/XML file: ' + error.message + '<br>';
+                console.error('Error loading RDF/XML file:', error);
+            }
+        });
+    </script>
+</body>
+</html>
