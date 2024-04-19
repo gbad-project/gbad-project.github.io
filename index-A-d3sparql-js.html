@@ -264,6 +264,34 @@
   <script src="assets/js/timeline.js"></script>
   <script src="sampleQueries-A.js"></script>
 
+  <!-- d3sparql.js -->
+  <script src="assets/js/d3.v3.min.js"></script>
+  <script src="assets/js/d3sparql.js"></script>
+  <script>
+    function exec() {
+      var endpoint = d3.select("#endpoint").property("value")
+      var sparql = d3.select("#sparql").property("value")
+      d3sparql.query(endpoint, sparql, render)
+    }
+    function render(json) {
+      var config = {
+        "charge": -500,
+        "distance": 50,
+        "width": 1000,
+        "height": 750,
+        "selector": "#result"
+      }
+      d3sparql.forcegraph(json, config)
+    }
+
+    function exec_offline() {
+      d3.json("cache/dbpedia/proglang_pair.json", render)
+    }
+    function toggle() {
+      d3sparql.toggle()
+    }
+    </script>
+
   <!-- Sparnatural-specific -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
