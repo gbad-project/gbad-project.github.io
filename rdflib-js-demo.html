@@ -16,15 +16,16 @@
             const debugInfo = document.getElementById('debugInfo');
             const rdfContent = document.getElementById('rdfContent');
             const store = $rdf.graph();
+            document.getElementById('output2').textContent = JSON.stringify(store, null, 2);
 
-            var RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
-            var RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#");
+            //var RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+            //var RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#");
 
             // Define the URI of the RDF/XML file
-            const rdfUri = 'demo.rdf';
+            const rdfUri = document.getElementById('output').innerHTML;
 
             // Define the base URI
-            const baseUri = 'http://127.0.0.1:4000/';
+            const baseUri = 'http://127.0.0.1:4000/demo.rdf';
 
             try {
                 // Load RDF/XML file into the store
@@ -43,5 +44,62 @@
             }
         });
     </script>
+
+<h1>Debug RDF Library</h1>
+<pre id="output"><?xml version="1.0" encoding="UTF-8"?>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+             xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+             xmlns:owl="http://www.w3.org/2002/07/owl#"
+             xmlns:html="http://www.w3.org/1999/xhtml"
+             xml:base="https://aims.archives.gov.on.ca/GBAD/"
+             xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
+        <rico:RecordSet rdf:about="ADD/RG18/210">
+            <rico:hasRecordSetType
+             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+            <rico:title xml:lang="en">Records of the Walkerton Inquiry</rico:title>
+            <rdfs:label xml:lang="en">Records of the Walkerton Inquiry</rdfs:label>
+            <rico:isAssociatedWithEvent></rico:isAssociatedWithEvent>
+            <rico:history>
+                <!-- 
+                    https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&exp=sisn%2011727
+                 -->
+    
+            </rico:history>
+            <rico:scopeAndContent>
+                <!--
+                    file:///Users/peiwen/Desktop/gabd-project/readings/RiC-O_1-0_documentation.html#scopeAndContent
+    
+                    Summary of the scope (such as time periods, geography) and content (such as subject matter, administrative processes) of a Record Resource. Provides a more complete summary of the informational content of the Record Resource highlighting the information conveyed in the Record Resource, why it was created, received, and/or maintained, and the agents connected to it. It may include description of relations with agents, activities, dates and places, or with other record resources.
+                -->
+                <!--
+                    Super-class: rico:generalDescription
+    
+                    if other sections need the general description, belongs to the generalDescription section. 
+                    
+                    General information about an entity.
+                -->
+            </rico:scopeAndContent>
+            <!--The enclosed rico:Instantiation element does not validate:
+            Error: {E201} rdf:about not allowed as attribute here.[Line = 35, Column = 56]
+            Error: {E201} rdf:resource not allowed as attribute here.[Line = 36, Column = 163]
+            <rico:Instantiation rdf:about="instantiation/">
+                <rdfs:seeAlso rdf:resource="https://aims.archives.gov.on.ca/scripts/mwimain.dll/144/DESCRIPTION_WEB/WEB_DESC_DET?SESSIONSEARCH&amp;exp=sisn%2011727"/>
+            </rico:Instantiation>
+            -->
+            
+        </rico:RecordSet>
+        <rico:Agent rdf:about="Authorities/BA619">
+        </rico:Agent>
+        <rico:Event>
+        </rico:Event>
+    </rdf:RDF>
+    
+    </pre>
+<pre id="output2"></pre>
+
+
+
+
 </body>
 </html>
