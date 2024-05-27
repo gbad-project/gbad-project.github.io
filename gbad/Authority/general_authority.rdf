@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--The first title section copied from file RG 18-210-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://gbad.archives.gov.on.ca/">
+
+    <rico:Record>
+        <!--Unsure about the implmentation of RecordState-->
+        <rico:hasRecordState: rdf:resource="STATUSA/AUTH-18"> 
+        <rico:hadRecorsSate: rdf:resource="WEBA/AUTH-22">
+        <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+        <rico:isOrWasRegulatedBy rdf:resource="Authority/Rules(AUTH16)"/>
+        <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">yyyy-mm-dd</rico:lastModificationDate> <!--input the date under yyy-mm-dd format here-->
+
+    </rico:Record>
+
+    <rico:Agent>
+    
+    
+    </rico:Agent>
+
+</rdf:RDF>  
+
+    
