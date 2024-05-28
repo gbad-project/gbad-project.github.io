@@ -1,0 +1,90 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xml:base="https://gbad.archives.gov.on.ca/">
+
+  <!-- Authority Record -->
+  <rico:Record rdf:about="http://example.org/records/AuthorityRecord">
+    <rico:name>Authority Record</rico:name>
+    <rico:hasDocumentaryFormType>
+      <rico:DocumentaryFormType rdf:about="http://example.org/types/AuthorityRecord"/>
+    </rico:hasDocumentaryFormType>
+    <rico:hasRecordState>
+      <rico:RecordState rdf:about="http://example.org/states/Status"/>
+    </rico:hasRecordState>
+    <rico:lastModificationDate>
+      <rico:Date>
+        <rico:standardDate>2024-04-26</rico:standardDate>
+      </rico:Date>
+    </rico:lastModificationDate>
+    <rico:generalDescription>This is an example of an authority record.</rico:generalDescription>
+  </rico:Record>
+
+  <!-- Agent -->
+  <rico:Agent rdf:about="http://example.org/agents/GeneralAuthority">
+    <rico:identifier>GeneralAuthority</rico:identifier>
+    <rico:name>General Authority</rico:name>
+    <rico:agentType>Corporate Body</rico:agentType>
+    <rico:hasBeginningDate>
+      <rico:Date>
+        <rico:standardDate>2024-01-01</rico:standardDate>
+      </rico:Date>
+    </rico:hasBeginningDate>
+    <rico:hasEndDate>
+      <rico:Date>
+        <rico:standardDate>2024-12-31</rico:standardDate>
+      </rico:Date>
+    </rico:hasEndDate>
+    <rico:authorizedBy>
+      <rico:Mandate rdf:about="http://example.org/mandates/Authorization"/>
+    </rico:authorizedBy>
+  </rico:Agent>
+
+  <!-- Dates of Existence -->
+  <rico:Date rdf:about="http://example.org/dates/DatesOfExistence">
+    <rico:standardDate>2024-01-01</rico:standardDate>
+  </rico:Date>
+
+  <!-- Authority Record Creation Activity -->
+  <rico:Activity rdf:about="http://example.org/activities/AuthorityRecordCreation">
+    <rico:name>Authority Record Creation</rico:name>
+    <rico:performedBy>
+      <rico:Person rdf:about="http://example.org/persons/Archivist"/>
+    </rico:performedBy>
+    <rico:occurredAtDate>
+      <rico:Date>
+        <rico:standardDate>2024-04-26</rico:standardDate>
+      </rico:Date>
+    </rico:occurredAtDate>
+  </rico:Activity>
+
+  <!-- Authority Record Modification Activity -->
+  <rico:Activity rdf:about="http://example.org/activities/AuthorityRecordModification">
+    <rico:name>Authority Record Modification</rico:name>
+    <rico:performedBy>
+      <rico:Person rdf:about="http://example.org/persons/Archivist"/>
+    </rico:performedBy>
+    <rico:occurredAtDate>
+      <rico:Date>
+        <rico:standardDate>2024-04-27</rico:standardDate>
+      </rico:Date>
+    </rico:occurredAtDate>
+  </rico:Activity>
+
+  <!-- Relations -->
+  <rico:AgentControlRelation rdf:about="http://example.org/relations/ControlRelation">
+    <rico:relationHasTarget rdf:resource="http://example.org/agents/GeneralAuthority"/>
+    <rico:relationHasSource rdf:resource="http://example.org/agents/ControllingAgent"/>
+    <rico:hasBeginningDate>
+      <rico:Date>
+        <rico:standardDate>2024-01-01</rico:standardDate>
+      </rico:Date>
+    </rico:hasBeginningDate>
+    <rico:hasEndDate>
+      <rico:Date>
+        <rico:standardDate>2024-12-31</rico:standardDate>
+      </rico:Date>
+    </rico:hasEndDate>
+  </rico:AgentControlRelation>
+
+</rdf:RDF>
