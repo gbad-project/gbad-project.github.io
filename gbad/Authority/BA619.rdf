@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--The first title section copied from file RG 18-210-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="https://gbad.archives.gov.on.ca/"
+         xmlns:ric-rst="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#">
+
+   <rico:RecordSet rdf:about="ADD/RG18/210"> <!--Still not sure whether to use rico:RecordSet or rico:Record. From the two examples provided, they were both using Record-->
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:describes rdf:resource="agent/Authority/Walkerton Inquiry"/> <!--Added Authority/ here indicating it is from the authority dataset, also used the NAME instead of HEADING to indicate the agency name-->
+      <rico:createdBy rdf:resource="agent/Authority/BA-619"/> <!--Used the REFA as reference to one specific agency-->
+
+      <!--IMPROTANT NOTE: MIGHT NEED TO USE SOME OTHER CODE AS REFERENCE OF THE AGENTS, BECAUSE UNDER THE AUTHORITY DATASET NOT ALL AUTHORITIES HAVING "REFA": "CA1907" DATA-->
+
+      <rico:ruleFollowed xml:lang="en">ISAAR(CPF): International Standard Archival Authority Record for Corporate Bodies, Persons and Families, International Council on Archives (2nd edition, 2003)</rico:ruleFollowed>
+      <rico:ruleFollowed xml:lang="en">Rules for the construction of personal, place and corporate names, National Council on Archives (1997).</rico:ruleFollowed>
+      <rico:hasLanguage rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+
+      <!--The University-of-Strathclyde-Archives_Scotland was using createdBy and managedBy, while the NationalArchivesOfFrance is using regulatedBy -->
+      <!--Since the graph that Aaron provided is using RegulatedBy, the rico:isOrWasRegulatedBy is applied here-->
+      <rico:regulatedBy rdf:resource="agent/Authority/BA-619"/>
+      <rico:heldBy rdf:resource="agent/Authority/ON-00009"/> <!--The code for agent Archives of Ontario. Since this recordSet hasOrHadholder by Archives of Ontario-->
+
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-13</rico:creationDate> <!--Establish date of Inquiry-->
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-23</rico:lastModificationDate> <!--Clossing date of Inquiry-->
+   
+      <rico:hasInstantiation>
+         <!--We might need to code some references in order to reference the instantiations. 
+            The following "ADD/SISN/11727" aplied the SISN number retreived from the ADD dataset-->
+         <rico:Instantiation rdf:about="ADD/SISN/11727"> 
+            <rico:instantiates rdf:resource="ADD/RG18/210"/> <!--Copied from RG 18-210.rdf file-->
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>11727</rico:identifier> <!--Applied the identification code from line 30-->
+            <rico:heldBy rdf:resource="agent/Authority/ON-00009"/> <!--Refer to line 25-->
+            <rdfs:seeAlso rdf:resource="https://www.archives.gov.on.ca/en/index.aspx"/> <!--Applied the AOO web link here-->
+            <rico:hasOrHadHolder rdf:resource="agent/Authority/ON-00009"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordSet>
+
+   <rico:Agent rdf:about="Authority/Ontario. Walkerton Inquiry"> <!--Applied "HEADING": "Ontario. Walkerton Inquiry" here-->
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="RG18/210"/>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/Walkerton Inquiry">
+            <rdfs:label xml:lang="en">Walkerton Inquiry</rdfs:label>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:agentIsTargetOfMandateRelation>
+         <rico:MandateRelation>
+            <rico:mandateRelationHasTarget rdf:resource="agent/Order in Council 1170 / 2000"/>
+            <rico:mandateRelationHasSource>
+               <rico:Mandate>
+                  <rico:title>Order in Council 1170 / 2000</rico:title>
+                  <rdfs:MandateType> Order in Council </rdfs:MandateType>
+               </rico:Mandate>
+            </rico:mandateRelationHasSource>
+         </rico:MandateRelation>
+      </rico:agentIsTargetOfMandateRelation>
+
+      <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-13</rico:creationDate> <!--Establish date of Inquiry-->
+      <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-23</rico:lastModificationDate> <!--Clossing date of Inquiry-->
+   </rico:Agent>
+
+   <!--One nodes related to the agent that hasn't been implemented yet is the one related to the agentHierarchicalRelations. That  this recordSet hasOrHadLeader from -->
+
+
+
+</rdf:RDF>  
+
+
+
+
+
+

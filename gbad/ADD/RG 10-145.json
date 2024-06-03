@@ -1,0 +1,30 @@
+{ "database": "AUTHORITY",  "records": [    
+    {
+    "REFD": "RG 10-145",
+    "LEVELDES": "Series",
+    "TITLE": "Mobile Tuberculosis Testing Clinic photographs",
+    "DATECR": "[ca. 1950]-1964",
+    "DATEDSRC": "1950--1964",
+    "ARCHD": "O'Rourke",
+    "STATUSD": "Approved",
+    "WEBD": "Y",
+    "IMAGESLINK": "X",
+    "MODDATE": "2002-08-20",
+    "NEWLIST": "N",
+    "SCOPE":"This series contains photographs of the mobile tuberculosis testing clinics administered by the Department of Health. This includes photographs of chest X-ray machinery, Community X-ray Survey trucks, the Chest X-ray train, information displays for fairs, TB testing equipment, department staff, and interior views of the clinics.",
+    "AVAIL":"Some of the photographs from this series are available in digital format in the Archives of Ontario Visual Database. Search using reference code RG 10-145.",
+    "RESTRTX":"No restrictions on access.",
+    "TGU":"Crown copyright exists in these photographs. Permission to publish is required from the Archives of Ontario. Submit a Request for Permission to Publish, Exhibit or Broadcast form.",
+    "GMD":"Graphic materials",
+    "HOWTO":"To view these records, order Series RG 10-145, container B 972.",
+    "INDEXPROV":"Ontario. Dept. of Health",
+    "OFFORG": [{"DATEOFF":"[ca. 1950]-1964","OFFICEAB":"Department of Health","AB_REFA":"AA37","OFFICEC":" ","C_REFA":" "},
+    ],
+    "FINDAID_GRP": [{"FINDAID":" ","FINDAIDLINK":" ","FINDAID_URL":" "},
+    ],
+    "IILOAN": [{"IIL":" ","IIL_URL":" "},
+    ],
+    "SISN":8272
+    },
+]
+}
