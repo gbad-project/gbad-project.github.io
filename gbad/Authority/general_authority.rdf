@@ -15,7 +15,13 @@
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
         <rico:isOrWasRegulatedBy rdf:resource="Authority/Rules(AUTH16)"/>
         <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">yyyy-mm-dd</rico:lastModificationDate> <!--input the date under yyy-mm-dd format here-->
+        <rico:generalDescription xml:lang="fr"> Source Note (AUTH17) SOURCE</rico:generalDescription>
 
+        <rico:Activity>
+            <rico:occurredAtDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">yyyy-mm-dd</rico:occurredAtDate>
+            <rico:isOrWasPerformedBy>
+            </rico:isOrWasPerformedBy>
+        </rico:Activity>
     </rico:Record>
 
     <rico:Agent>
