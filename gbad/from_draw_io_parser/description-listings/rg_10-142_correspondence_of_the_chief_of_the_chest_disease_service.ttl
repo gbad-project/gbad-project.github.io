@@ -40,12 +40,6 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "1948" .
 
 
-###  http://gbad.archives.gov.on.ca/1948-1982
-<http://gbad.archives.gov.on.ca/1948-1982> rdf:type owl:NamedIndividual ,
-                                                    rico:Date ;
-                                           rdfs:label "1948-1982" .
-
-
 ###  http://gbad.archives.gov.on.ca/1974
 <http://gbad.archives.gov.on.ca/1974> rdf:type owl:NamedIndividual ,
                                                rico:Date ;
@@ -79,16 +73,13 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service
 <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> rdf:type owl:NamedIndividual ,
-                                                                                                                   rico:Instantiation ,
                                                                                                                    rico:RecordSet ,
                                                                                                                    rico:Title ;
                                                                                                           rico:hasContentOfType <http://gbad.archives.gov.on.ca/Textual%20Records> ;
-                                                                                                          rico:hasCreationDate <http://gbad.archives.gov.on.ca/1948-1982> ;
                                                                                                           rico:hasCreator <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ,
-                                                                                                                          <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ,
-                                                                                                                          <http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV> ;
+                                                                                                                          <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ;
                                                                                                           rico:hasOrHadIdentifier <http://gbad.archives.gov.on.ca/RG%2010-142> ;
-                                                                                                          rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> ;
+                                                                                                          rico:hasOrHadInstantiation <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service-i1> ;
                                                                                                           rico:hasOrHadTitle <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service> ;
                                                                                                           rico:hasRecordSetType <http://gbad.archives.gov.on.ca/Series> ;
                                                                                                           rico:isOrWasDescribedBy <http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service%20Archival%20Description> ;
@@ -96,16 +87,23 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                                           rico:accruals "No further accruals are expected." ;
                                                                                                           rico:conditionsOfAccess "Access to these records is governed by the Freedom of Information and Protection of Privacy Act. Requests for access to records 100 years old or less must be submitted in writing to the Information and Privacy Unit of the Archives of Ontario." ;
                                                                                                           rico:conditionsOfUse "Copyright is held primarily by the Crown. There are no restrictions on reproduction. Permission of the Archives of Ontario is required for publication; submit a Request for Permission to Publish, Exhibit or Broadcast Form." ;
-                                                                                                          rico:generalDescription "Finding Aid Note: No file list is available." ,
-                                                                                                                                  "How to Order: Please contact a Reference Archivist for information about obtaining access to this material." ;
-                                                                                                          rico:history "Records in this series were transferred to the Archives of Ontario by the Ministry of Health." ;
-                                                                                                          rico:instantiationExtent "9.8 metres of textual records (32 Boxes)" ;
+                                                                                                          rico:creationDate "1948-1982" ;
+                                                                                                          rico:generalDescription "Finding Aid Note: No file list is available." ;
+                                                                                                          rico:history "Immediate Source of Acquisition: Records in this series were transferred to the Archives of Ontario by the Ministry of Health." ;
                                                                                                           rico:scopeAndContent """Series consists of records created and maintained by the Chest Disease Service and its predecessor agencies to provide a cumulative record in reviewing, preventing, and treating tuberculosis in Ontario.Records consist of originals of incoming and copies of outgoing correspondence, both inter and intra Ministry, with the federal government, sanatoria, chest clinics, professional associations, other agencies outside the provincial government, and private citizens relating to the prevention and treatment of tuberculosis in Ontario.
 
 Subjects include the following: drugs, chemotheraphy, chest x-ray programs, epidemiology, home care programs, health standards, immigrants and refugees, mass survey x-ray interpretaion, smoking and health education material.
 
 Files are arranged alphabetically by subject.""" ;
                                                                                                           rdfs:label "Correspondence of the Chief of the Chest Disease Service" .
+
+
+###  http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service-i1
+<http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service-i1> rdf:type owl:NamedIndividual ,
+                                                                                                                      rico:Instantiation ;
+                                                                                                             rico:generalDescription "How to Order: Please contact a Reference Archivist for information about obtaining access to this material." ;
+                                                                                                             rico:instantiationExtent "9.8 metres of textual records (32 Boxes)" ;
+                                                                                                             rdfs:label "Correspondence of the Chief of the Chest Disease Service-i1" .
 
 
 ###  http://gbad.archives.gov.on.ca/Correspondence%20Of%20The%20Chief%20Of%20The%20Chest%20Disease%20Service%20Archival%20Description
@@ -141,12 +139,6 @@ Files are arranged alphabetically by subject.""" ;
                                                                  rico:relationHasTarget <http://gbad.archives.gov.on.ca/Chest%20Disease%20Service> ,
                                                                                         <http://gbad.archives.gov.on.ca/Division%20Of%20Tuberculosis%20Prevention> ;
                                                                  rdfs:label "Office of Origin Relation" .
-
-
-###  http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV
-<http://gbad.archives.gov.on.ca/Provenance%20%28ADD47%29INDEXPROV> rdf:type owl:NamedIndividual ,
-                                                                            rico:Agent ;
-                                                                   rdfs:label "Provenance (ADD47)INDEXPROV" .
 
 
 ###  http://gbad.archives.gov.on.ca/RG%2010-142
