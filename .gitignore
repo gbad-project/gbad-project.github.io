@@ -1,3 +1,5 @@
 _site
 Gemfile.lock
 .DS_Store
+mapped_LARGE*.ttl
+untracked

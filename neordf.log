@@ -1,0 +1,8 @@
+Uniqueness constraint on :Resource(uri) is created.
+The store is now: Open
+
+The store is now: Closed
+IMPORTED 343215 TRIPLES
+{'uri': ***, 'database': 'neo4j', 'user': ***,, 'pwd': ***,}
+Failed to write data to connection ResolvedIPv4Address((***,, 7687)) (ResolvedIPv4Address((***,, 7687)))
+Failed to write data to connection IPv4Address((***,, 7687)) (ResolvedIPv4Address((***,, 7687)))
