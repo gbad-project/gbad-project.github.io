@@ -4,6 +4,8 @@ Welcome to the official GitHub page of the Graph-Based Archival Description proj
 
 The grant was completed in December 2025. Its deliverable is DrawRDF – a Draw\.io plugin that adds an option to export diagrams to Resource Description Framework (RDF) graphs. It is available publicly and for free here: <https://gbad-project.github.io/drawio/src/main/webapp/?p=rdf>
 
+DrawRDF is included in the ICA/EGAD moderated Records in Contexts Resource List: <https://ica-egad.github.io/RiC-ResourceList/resource-details/42.html>
+
 A 5-minute video demo of basic functionality is available on YouTube: <https://www.youtube.com/watch?v=LaUAY8NCPqY>
 
 Additional documentation for DrawRDF is available here: <https://drawrdf.readthedocs.io/>
